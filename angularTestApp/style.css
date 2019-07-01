@@ -1,0 +1,20 @@
+
+        a{
+            color: aquamarine;
+            text-decoration: none;
+        }
+        a:hover{
+            color:rebeccapurple;
+            text-decoration: underline;
+        }
+
+        /* link class */
+        .bg-blue{
+            background-color: blue;
+            color: aliceblue
+        }
+
+        #title{
+            background-color: gray;
+            color: blue;   
+        }

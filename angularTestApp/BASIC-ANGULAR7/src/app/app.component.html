@@ -1,0 +1,52 @@
+<div>
+<form
+[formGroup]="form"
+(ngSubmit)="submit()">
+<div *ngFor="let question of questionFile">
+
+
+    <div className="col-md-3 col-sm-6">
+        <h5 className="mt-2">{{question.id}}  {{question.title}}</h5>
+    </div>
+  <div>
+    <label className="radio-inline">
+      <input
+      name={{question.id}}
+        type="radio"
+        value="2"
+        (change)="select($event)"
+      />
+      A
+    </label>
+    <label className="radio-inline">
+      <input
+      name={{question.id}}
+        type="radio"
+        value="1"
+
+      />
+      B
+    </label>
+    <label className="radio-inline">
+      <input
+      name={{question.id}}
+        type="radio"
+        value="0"
+
+      />
+      X
+    </label>
+  </div>
+</div>
+<div class="row mb-5 mt-5">
+    <div class="col-12">
+      <div class="form-group center-block text-center">
+        <button type="submit" class="btn btn-primary">
+          ส่ง
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+  <router-outlet></router-outlet>
